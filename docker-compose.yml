@@ -1,0 +1,12 @@
+version: "3"
+
+services:
+  fe776:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./FE5.sfc:/usr/src/app/FE5.sfc
+      - ./BIN:/usr/src/app/FireEmblem5/BIN
+    environment:
+      PYTHONUNBUFFERED: 1
